@@ -7,7 +7,7 @@ link_directories(/usr/local/lib/)
 find_package(SndFile REQUIRED)
 
 add_executable(audiotest
-        src/main.c)
+        src/main.c src/sndfile_utils.c src/sndfile_utils.h src/sndio_utils.c src/sndio_utils.h)
 
 target_link_libraries(audiotest soundio SndFile)
 
