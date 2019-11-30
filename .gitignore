@@ -5,3 +5,5 @@
 /Makefile
 /CMakeFiles/
 /build/
+/audiotest
+/audiotest.cbp

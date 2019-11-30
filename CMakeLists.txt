@@ -4,11 +4,13 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_MODULE_PATH /usr/local/lib/cmake/)
 include_directories(/usr/local/include/)
 link_directories(/usr/local/lib/)
+find_package(SndFile REQUIRED)
 
 add_executable(audiotest
         src/main.c)
 
-target_link_libraries(audiotest soundio)
+target_link_libraries(audiotest soundio SndFile)
+
 # print all the cmake variables
 #get_cmake_property(_variableNames VARIABLES)
 #list (SORT _variableNames)
